@@ -1,0 +1,28 @@
+.container {
+    margin: 20px;
+}
+
+.house-table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.house-table th, .house-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+.house-table th {
+    background-color: #f2f2f2;
+}
+
+.house-table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.btn-primary {
+    background-color: aqua;
+    padding-left: 100px;
+}
+

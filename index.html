@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>House Rental</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" type="text/css" href="m.css">
+  <link rel="icon" href="image/favicon.png" type="image/png">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="vendors/linericon/style.css">
+  <link rel="stylesheet" href="/css/font-awesome.min.css">
+  <link rel="stylesheet" href="vendors/owl-carousel/owl.carousel.min.css">
+  <link rel="stylesheet" href="vendors/bootstrap-datepicker/bootstrap-datetimepicker.min.css">
+  <link rel="stylesheet" href="vendors/nice-select/css/nice-select.css">
+  <link rel="stylesheet" href="vendors/owl-carousel/owl.carousel.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+
+<header class="header_area">
+  <div class="container">
+      <nav class="navbar navbar-expand-lg navbar-light">
+          <!-- Brand and toggle get grouped for better mobile display -->
+          <a class="navbar-brand logo_h" href="index.html"><img src="image/logonew.png" alt=""></a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+          </button>
+          <!-- Collect the nav links, forms, and other content for toggling -->
+          <div class="collapse navbar-collapse offset" id="navbarSupportedContent">
+              <ul class="nav navbar-nav menu_nav ml-auto">
+                  <li class="nav-item active"><a class="nav-link" href="index.html">Home</a></li> 
+                  <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                  
+                  
+                  <li class="nav-item submenu dropdown">
+                      <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Views</a>
+                      <ul class="dropdown-menu">
+                          <li class="nav-item"><a class="nav-link" href="viewhouse.php">Rooms</a></li>
+                          <li class="nav-item"><a class="nav-link" href="viewrating.php">Details</a></li>
+                      </ul>
+                  </li> 
+                  <li class="nav-item"><a href="signup.html"><span class="glyphicon glyphicon-user"></span>Sign up</a></li>
+                  <li class="nav-item"><a href="signin.html"><span class="glyphicon glyphicon-log-in"></span>Sign in</a></li>
+              </ul>
+          </div> 
+      </nav>
+  </div>
+</header>
+  
+<div class="container">
+  <section class="section-meals" id="grid-photos">
+            <ul class="meals-showcase clearfix">
+                <li>
+                    <figure class="meal-photo" id="meals-1">
+                            <div class="slide-uploader" id="uploader-1">
+                                    <i class="fas fa-upload center"></i><br>
+                                    <input type="file" id="real-file-slide-1" hidden="hidden" onchange="open_File(this)"/>
+                                    </div>
+                        <img src="img/1ns.jpg" class="img img_hover" id="img-1">
+                    </figure>
+                </li>
+                <li>
+                    <figure class="meal-photo" id="meals-2">
+                            <div class="slide-uploader" id="uploader-2">
+                                    <i class="fas fa-upload center"></i><br>
+                                    <input type="file" id="real-file-slide-2" hidden="hidden" onchange="open_File(this)"/>
+                                    
+                            </div>
+                        <img src="img/2ns.jpg" class="img img_hover" id="img-2">
+                    </figure>
+                </li>
+                <li>
+                    <figure class="meal-photo" id="meals-3">
+                            <div class="slide-uploader" id="uploader-3">
+                                    <i class="fas fa-upload center"></i><br>
+                                    <input type="file" id="real-file-slide-3" hidden="hidden" onchange="open_File(this)"/>
+                                    
+                            </div>
+                        <img src="img/3ns.jpg" class="img img_hover" id="img-3">
+                    </figure>
+                </li>
+                <li>
+                    <figure class="meal-photo" id="meals-4">
+                            <div class="slide-uploader" id="uploader-4">
+                                    <i class="fas fa-upload center"></i><br>
+                                    <input type="file" id="real-file-slide-4" hidden="hidden" onchange="open_File(this)"/>
+                                    
+                            </div>
+                        <img src="img/4ns.jpg"class="img img_hover" id="img-4">
+                    </figure>
+                </li>
+                <li>
+                    <figure class="meal-photo" id="meals-5">
+                            <div class="slide-uploader" id="uploader-5">
+                                    <i class="fas fa-upload center"></i><br>
+                                    <input type="file" id="real-file-slide-5" hidden="hidden" onchange="open_File(this)"/>
+                                    
+                            </div>
+                        <img src="img/5ns.jpg" class="img img_hover" id="img-5">
+                    </figure>
+                </li>
+                <li>
+                    <figure class="meal-photo" id="meals-6">
+                            <div class="slide-uploader" id="uploader-6">
+                                    <i class="fas fa-upload center"></i><br>
+                                    <input type="file" id="real-file-slide-6" hidden="hidden" onchange="open_File(this)"/>
+                                    
+                            </div>
+                        <img src="img/6ns.jpg" class="img img_hover" id="img-6">
+                    </figure>
+                </li>
+                <li>
+                    <figure class="meal-photo" id="meals-7">
+                            <div class="slide-uploader" id="uploader-7">
+                                    <i class="fas fa-upload center"></i><br>
+                                    <input type="file" id="real-file-slide-7" hidden="hidden" onchange="open_File(this)"/>
+                                    
+                            </div>
+                        <img src="img/7ns.jpg" class="img img_hover" id="img-7">
+                    </figure>
+                </li>
+                <li>
+                    <figure class="meal-photo" id="meals-8">
+                            <div class="slide-uploader" id="uploader-8">
+                                    <i class="fas fa-upload center"></i><br>
+                                    <input type="file" id="real-file-slide-8" hidden="hidden" onchange="open_File(this)"/>
+                                    
+                            </div>
+                        <img src="img/8ns.jpg" class="img img_hover" id="img-8">
+                    </figure>
+                </li>
+            </ul>
+        </section>
+</div>
+
+
+<section class="accomodation_area section_gap">
+  <div class="container">
+      <div class="section_title text-center">
+          <h2 class="title_color">Phòng Sang trọng và tiện nghi</h2>
+          
+      </div>
+      <div class="row mb_30">
+          <div class="col-lg-3 col-sm-6">
+              <div class="accomodation_item text-center">
+                  <div class="hotel_img">
+                      <img style="width:259px; height: 194px;" src="img/1st.jpg" alt="">
+                      <a href="signin.html" class="btn theme_btn button_hover">Book</a>
+                  </div>
+                  <a href="#"><h4 class="sec_h4">Phòng đơn</h4></a>
+                  <h5>$5.5tr<small>/tháng</small></h5>
+              </div>
+          </div>
+          <div class="col-lg-3 col-sm-6">
+              <div class="accomodation_item text-center">
+                  <div class="hotel_img">
+                      <img style="width:259px; height: 194px;" src="img/2st.jpg" alt="">
+                      <a href="signin.html" class="btn theme_btn button_hover">Book</a>
+                  </div>
+                  <a href="#"><h4 class="sec_h4">Phòng 4 người</h4></a>
+                  <h5>$9tr<small>/tháng</small></h5>
+              </div>
+          </div>
+          <div class="col-lg-3 col-sm-6">
+              <div class="accomodation_item text-center">
+                  <div class="hotel_img">
+                      <img style="width:259px; height: 194px;" src="img/3st.jpg" alt="">
+                      <a href="signin.html" class="btn theme_btn button_hover">Book</a>
+                  </div>
+                  <a href="#"><h4 class="sec_h4">Phòng đơn gần Q12</h4></a>
+                  <h5>$6tr<small>/tháng</small></h5>
+              </div>
+          </div>
+          <div class="col-lg-3 col-sm-6">
+              <div class="accomodation_item text-center">
+                  <div class="hotel_img">
+                      <img style="width:259px; height: 194px;" src="img/4st.jpg" alt="">
+                      <a href="signin.html" class="btn theme_btn button_hover">Book</a>
+                  </div>
+                  <a href="#"><h4 class="sec_h4">Phòng ở Q1</h4></a>
+                  <h5>$15tr<small>/tháng</small></h5>
+              </div>
+          </div>
+      </div>
+  </div>
+</section>
+<!--================ Accomodation Area  =================-->
+
+<!--================ Facilities Area  =================-->
+<section class="facilities_area section_gap">
+  <div class="overlay bg-parallax" data-stellar-ratio="0.8" data-stellar-vertical-offset="0" data-background="">  
+  </div>
+  <div class="container">
+      <div class="section_title text-center">
+          <h2 class="title_w">Chính sách và Tiện Nghi</h2>
+          <p>Dành cho ai muốn ở không gian riêng và thư giãn hã đến với chúng tôi</p>
+      </div>
+      <div class="row mb_30">
+          <div class="col-lg-4 col-md-6">
+              <div class="facilities_item">
+                  <h4 class="sec_h4"><i class="lnr lnr-dinner"></i>Foods</h4>
+                  <p>Chúng tôi có sẵn dịch vụ cung cấp đồ ăn nước uống</p>
+              </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+              <div class="facilities_item">
+                  <h4 class="sec_h4"><i class="lnr lnr-bicycle"></i>Sports CLub</h4>
+                  <p>Luôn Luôn có khu vận động và tập thể dục cho những ai muốn trải nghiệm dịch vụ  .</p>
+              </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+              <div class="facilities_item">
+                  <h4 class="sec_h4"><i class="lnr lnr-drop"></i>Electricity</h4>
+                  <p>Luôn cung cấp nước và các dịch vụ liên quan nếu có vấn đề gì xảy ra</p>
+              </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+              <div class="facilities_item">
+                  <h4 class="sec_h4"><i class="lnr lnr-lock"></i>Rent a Car</h4>
+                  <p>Hệ Thóng bảo mật luôn được cấp cẩn thận và chặt chẽ</p>
+              </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+              <div class="facilities_item">
+                  <h4 class="sec_h4"><i class="lnr lnr-eye"></i>Gymnesium</h4>
+                  <p>Camera giám sát ở khắp nơi và sẽ hoàn toàn chịu trách nhiệm nếu có vấn đề xảy ra</p>
+              </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+              <div class="facilities_item">
+                  <h4 class="sec_h4"><i class="lnr lnr-phone"></i>Bar</h4>
+                  <p>Hãy gọi cho chúng tôi ngay để được trải nghiệm dịch vụ có 1 0 2 này</p>
+              </div>
+          </div>
+      </div>
+  </div>
+</section>
+<!--================ Facilities Area  =================-->
+
+<!--================ About History Area  =================-->
+<section class="about_history_area section_gap">
+  <div class="container">
+      <div class="row">
+          <div class="col-md-6 d_flex align-items-center">
+              <div class="about_content ">
+                  <h2 class="title title_color"><br>Our History<br></h2>
+                  <p>phòng trọ đã có một lịch sử lâu đời và đóng vai trò quan trọng trong cuộc sống của con người. Tuy nhiên, để phòng trọ thực sự trở thành một không gian sống lý tưởng, cần có sự chung tay của cả cộng đồng, từ chủ nhà trọ, cơ quan quản lý đến chính những người thuê trọ</p>
+                  <a href="#" class="button_hover theme_btn_two">More Details</a>
+              </div>
+          </div>
+          <div class="col-md-6">
+              <img style="height:105%;" class="img-fluid" src="img/history.jpg" alt="img">
+          </div>
+      </div>
+  </div>
+</section>
+<!--================ About History Area  =================-->
+
+<!--================ Testimonial Area  =================-->
+<section class="testimonial_area section_gap">
+  <div class="container">
+      <div class="section_title text-center">
+          <h2 class="title_color">Our Clients</h2>
+      
+      </div>
+      <div class="testimonial_slider owl-carousel">
+          <div class="media testimonial_item">
+              <img class="rounded-circle"style="width:200px; height: 150px;" src="img/vuant1.png" alt="">
+              <div class="media-body">
+                  <p>Với Axie Infinity, Trung đã tạo ra một cơn sốt toàn cầu trong lĩnh vực game blockchain, thu hút hàng triệu người chơi. Thành công của Axie Infinity đã đưa tên tuổi của Trung trở thành một trong những doanh nhân trẻ nổi bật nhất Việt Nam.</p>
+                  <a href="#"><h4 class="sec_h4">Nguyễn Thành Trung</h4></a>
+                  <div class="star">
+                      <a href="#"><i class="fa fa-star"></i></a>
+                      <a href="#"><i class="fa fa-star"></i></a>
+                      <a href="#"><i class="fa fa-star"></i></a>
+                      <a href="#"><i class="fa fa-star"></i></a>
+                      <a href="#"><i class="fa fa-star-half-o"></i></a>
+                  </div>
+              </div>
+          </div>    
+          <div class="media testimonial_item">
+              <img class="rounded-circle" style="width:200px; height: 150px;" src="img/vuant2.jpg" alt="">
+              <div class="media-body">
+                  <p>là một trong những công ty công nghệ hàng đầu Việt Nam, với các sản phẩm như Zalo, Zing MP3. Thành Công và đội ngũ của mình đã xây dựng VNG từ một studio game nhỏ thành một "kỳ lân" công nghệ.</p>
+                  <a href="#"><h4 class="sec_h4">Lê Châu</h4></a>
+                  <div class="star">
+                      <a href="#"><i class="fa fa-star"></i></a>
+                      <a href="#"><i class="fa fa-star"></i></a>
+                      <a href="#"><i class="fa fa-star"></i></a>
+                      <a href="#"><i class="fa fa-star"></i></a>
+                      <a href="#"><i class="fa fa-star-half-o"></i></a>
+                  </div>
+              </div>
+          </div>
+          <div class="media testimonial_item">
+              <img class="rounded-circle" style="width:200px; height: 150px;" src="img/vuant3.jpg" alt="">
+              <div class="media-body">
+                  <p>là một trong những nền tảng thương mại điện tử lớn nhất Việt Nam. Hải đã xây dựng Tiki từ một cửa hàng sách trực tuyến nhỏ thành một "ông lớn" trong lĩnh vực thương mại điện tử. </p>
+                  <a href="#"><h4 class="sec_h4">Phạm thị Hải</h4></a>
+                  <div class="star">
+                      <a href="#"><i class="fa fa-star"></i></a>
+                      <a href="#"><i class="fa fa-star"></i></a>
+                      <a href="#"><i class="fa fa-star"></i></a>
+                      <a href="#"><i class="fa fa-star"></i></a>
+                      <a href="#"><i class="fa fa-star-half-o"></i></a>
+                  </div>
+              </div>
+          </div>    
+          <div class="media testimonial_item">
+              <img class="rounded-circle" style="width:200px; height: 150px;" src="img/vuant4.jpg" alt="">
+              <div class="media-body">
+                  <p>Với Luxstay, Nguyên đã mang đến một giải pháp cho thuê nhà nghỉ dưỡng độc đáo và chất lượng cao, đáp ứng nhu cầu của du khách. </p>
+                  <a href="#"><h4 class="sec_h4">Châu Bùi Ngọc</h4></a>
+                  <div class="star">
+                      <a href="#"><i class="fa fa-star"></i></a>
+                      <a href="#"><i class="fa fa-star"></i></a>
+                      <a href="#"><i class="fa fa-star"></i></a>
+                      <a href="#"><i class="fa fa-star"></i></a>
+                      <a href="#"><i class="fa fa-star-half-o"></i></a>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+</section>
+<!--================ Testimonial Area  =================-->
+
+<!--================ Latest Blog Area  =================-->
+<section class="latest_blog_area section_gap">
+  <div class="container">
+      <div class="section_title text-center">
+          <h2 class="title_color">latest posts from blog</h2>
+          
+      </div>
+      <div class="row mb_30">
+          <div class="col-lg-4 col-md-6">
+              <div class="single-recent-blog-post">
+                  <div class="thumb">
+                      <img class="img-fluid" style="width:290px; height: 150px;" src="img/phhhkm.jpg" alt="post">
+                  </div>
+                  <div class="details">
+                      <div class="tags">
+                          <a href="#" class="button_hover tag_btn">Travel</a>
+                          <a href="#" class="button_hover tag_btn">Costs Cheap</a>
+                      </div>
+                      <a href="#"><h4 class="sec_h4">Low Cost Advertising</h4></a>
+                      <p>Căn phòng trọ mặt bằng rẻ nhất ở hồ hoàn kiếm chỉ với 8tr/đồng?</p>
+                      <h6 class="date title_color">1st January,2024</h6>
+                  </div>	
+              </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+              <div class="single-recent-blog-post">
+                  <div class="thumb">
+                      <img class="img-fluid" style="width:290px; height: 150px;" src="img/phongcg.jpg" alt="post">
+                  </div>
+                  <div class="details">
+                      <div class="tags">
+                          <a href="#" class="button_hover tag_btn">Style</a>
+                          <a href="#" class="button_hover tag_btn">Girls</a>
+                      </div>
+                      <a href="#"><h4 class="sec_h4">Creative Outdoor</h4></a>
+                      <p>DÙ chỉ là 1 căn phòng cho thuê nhưng lại có dịch vụ custom phòng</p>
+                      <h6 class="date title_color">24rd August,2024</h6>
+                  </div>	
+              </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+              <div class="single-recent-blog-post">
+                  <div class="thumb">
+                      <img class="img-fluid" style="width:290px; height: 150px;" src="img/backpackers.jpg" alt="post">
+                  </div>
+                  <div class="details">
+                      <div class="tags">
+                          <a href="#" class="button_hover tag_btn">Cool</a>
+                          <a href="#" class="button_hover tag_btn">Insane Room</a>
+                      </div>
+                      <a href="#"><h4 class="sec_h4">In VietNam ,TpHCM</h4></a>
+                      <p>Nhà trọ semi-packer có quầy bar,giải trí mỗi khi mệt mỏi </p>
+                      <h6 class="date title_color">14st Novenber,2024</h6>
+                  </div>	
+              </div>
+          </div>
+      </div>
+  </div>
+</section>
+<!--================ Recent Area  =================-->
+
+<!--================ start footer Area  =================-->	
+<footer class="footer-area section_gap">
+  <div class="container">
+      <div class="row">
+          <div class="col-lg-3  col-md-6 col-sm-6">
+              <div class="single-footer-widget">
+                  <h6 class="footer_title">About</h6>
+                  <p>Với sự phát triển của các đô thị thông minh, nhu cầu về nhà ở chất lượng cao ngày càng tăng. Phòng trọ trong tương lai dự kiến sẽ có nhiều thay đổi tích cực </p>
+              </div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-6">
+              <div class="single-footer-widget">
+                  <h6 class="footer_title">Navigation Links</h6>
+                  <div class="row">
+                      <div class="col-4">
+                          <ul class="list_style">
+                              <li><a href="index.html">Home</a></li>
+                              <li><a href="viewhouse.php">Views</a></li>
+                              <li><a href="signup.php">Sign up</a></li>
+                              <li><a href="signin.html">Sign in</a></li>
+                          </ul>
+                      </div>
+                    										
+                  </div>							
+              </div>
+          </div>							
+          <div class="col-lg-3 col-md-6 col-sm-6">
+              <div class="single-footer-widget">
+                  <h6 class="footer_title">Contact Now</h6>
+                  <p>For business professionals caught between high OEM price and mediocre print and graphic output, </p>		
+                  <div id="mc_embed_signup">
+                      <form target="_blank" action="https://spondonit.us12.list-manage.com/subscribe/post?u=1462626880ade1ac87bd9c93a&amp;id=92a4423d01" method="get" class="subscribe_form relative">
+                          <div class="input-group d-flex flex-row">
+                              <input name="EMAIL" placeholder="Email Address" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Email Address '" required="" type="email">
+                              <button class="btn sub-btn"><span class="lnr lnr-location"></span></button>		
+                          </div>									
+                          <div class="mt-10 info"></div>
+                      </form>
+                  </div>
+              </div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-6">
+              <div class="single-footer-widget instafeed">
+                  <h6 class="footer_title">InstaFeed</h6>
+                  <ul class="list_style instafeed d-flex flex-wrap">
+                      <li><img src="image/instagram/Image-01.jpg" alt=""></li>
+                      <li><img src="image/instagram/Image-02.jpg" alt=""></li>
+                      <li><img src="image/instagram/Image-03.jpg" alt=""></li>
+                      <li><img src="image/instagram/Image-04.jpg" alt=""></li>
+                      <li><img src="image/instagram/Image-05.jpg" alt=""></li>
+                      <li><img src="image/instagram/Image-06.jpg" alt=""></li>
+                      <li><img src="image/instagram/Image-07.jpg" alt=""></li>
+                      <li><img src="image/instagram/Image-08.jpg" alt=""></li>
+                  </ul>
+              </div>
+          </div>						
+      </div>
+      <div class="border_line"></div>
+    
+  </div>
+</footer>
+
+        <script src="js/jquery-3.2.1.min.js"></script>
+        <script src="js/popper.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="vendors/owl-carousel/owl.carousel.min.js"></script>
+        <script src="js/jquery.ajaxchimp.min.js"></script>
+        <script src="js/mail-script.js"></script>
+        <script src="vendors/bootstrap-datepicker/bootstrap-datetimepicker.min.js"></script>
+        <script src="vendors/nice-select/js/jquery.nice-select.js"></script>
+        <script src="js/mail-script.js"></script>
+        <script src="js/stellar.js"></script>
+        <script src="vendors/lightbox/simpleLightbox.min.js"></script>
+        <script src="js/custom.js"></script>
+</body>
+</html>

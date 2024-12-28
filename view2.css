@@ -1,0 +1,28 @@
+.house-listing {
+    margin-bottom: 30px; /* Add some spacing below the table */
+  }
+  
+  .house-table {
+    width: 100%; /* Ensure table fills container */
+    border-collapse: collapse; /* Remove borders between cells for cleaner look */
+  }
+  
+  .house-table th,
+  .house-table td {
+    padding: 10px; /* Consistent padding for readability */
+    border: 1px solid #ddd; /* Add thin table borders */
+  }
+  
+  .house-table thead th {
+    background-color: #eee; /* Light background for header row */
+    font-weight: bold; /* Bold text for headers */
+  }
+  
+  .house-table img {
+    max-width: 100px; /* Limit image width for better layout */
+    height: auto; /* Maintain aspect ratio */
+  }
+  
+  .btn-primary {
+    margin-bottom: 15px; /* Add some spacing below the button */
+  }
